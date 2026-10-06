@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>utazas</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div id="cards"></div>
+
+    <h1>Felvétel:</h1>
+    <form action="submit" id="form">
+      <label for="title">Cím:</label>
+      <input type="text" name="title" id="title">
+
+      <label for="content">Tartalom:</label>
+      <input type="text" name="content" id="content">
+    
+      <div>
+        <input type="radio" name="img" id="1" value="https://picsum.photos/id/84/300/300">
+        <label for="1"><img src="https://picsum.photos/id/84/300/300" alt="1"></label>
+      </div>
+      <div>
+        <input type="radio" name="img" id="2" value="https://picsum.photos/id/82/300/300">
+        <label for="2"><img src="https://picsum.photos/id/82/300/300" alt="2"></label>
+      </div>
+      <div>
+        <input type="radio" name="img" id="3" value="https://picsum.photos/id/96/300/300">
+        <label for="3"><img src="https://picsum.photos/id/96/300/300" alt="3"></label>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>Export:</h1>
+    <button type="button" id="export-button">Export</button>
+    <textarea name="export" id="export"></textarea>
+  </body>
+</html>
